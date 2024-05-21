@@ -38,6 +38,7 @@
 # Web Dev
 **/node_modules/
 **/.next
+**/package-lock.json
 
 # Android
 **/android/app/debug
