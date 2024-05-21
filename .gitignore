@@ -1,0 +1,58 @@
+# Compiled output
+**/bin/
+**/build/
+**/pkg/
+**/target/
+**/__pycache__/
+**/*.class
+**/*.log
+**/*.pyc
+
+# Editors and IDEs
+**/.vscode/
+**/.intellij/
+**/.idea
+**/*.iml
+**/*.ipr
+**/*.iws
+**/.atom/
+**/.buildlog/
+**/.history
+**/*.xcworkspace/
+
+# Environment files
+**/.env
+
+# Flutter
+**/ios/Flutter/.last_build_id
+**/.flutter/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.pub-cache/
+**/.pub/
+**/pubspec.lock
+
+# Web Dev
+**/node_modules/
+**/.next
+
+# Android
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+
+# Swift
+**/xcuserdata/
+**/DerivedData/
+
+# Miscellaneous
+**/.DS_Store
+**/thumbs.db
+**/app.*.symbols
+**/app.*.map.json
+**/.svn/
+**/migrate_working_dir/
+
+# Swap files
+**/*.swp
