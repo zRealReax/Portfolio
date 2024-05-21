@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { motion } from "framer-motion";
-import ProjectCard from "@/Components/ProjectCard";
-import InteractiveCard from "@/Components/InteractiveCard";
+import ProjectCard from "@/app/ProjectCard";
+import InteractiveCard from "@/app/InteractiveCard";
 
 const Home = () => {
   const projects = [
