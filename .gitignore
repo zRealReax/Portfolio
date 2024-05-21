@@ -22,6 +22,8 @@
 
 # Environment files
 **/.env
+**/.env*.local
+**/next-env.d.ts
 
 # Flutter
 **/ios/Flutter/.last_build_id
