@@ -27,11 +27,11 @@ const InteractiveCard = ({ title, description, image }: any) => {
       tiltMaxAngleX={1}
       tiltMaxAngleY={1.5}
       transitionSpeed={1500}
-      className="w-5/6 "
+      className="w-full"
     >
       <section
         ref={cardRef}
-        className="overflow-hidden rounded-3 mb-3 md:mb-5 rounded-3xl bg-gray-800 border-2 border-gray-600"
+        className="overflow-hidden mb-3 md:mb-5 rounded-3xl bg-gray-800 border-2 border-gray-600"
         data-catalyst=""
         data-perspective="700"
         style={{
@@ -39,21 +39,21 @@ const InteractiveCard = ({ title, description, image }: any) => {
         }}
       >
         <div
-          className="md:flex  relative justify-between z-10 flex-row"
+          className="flex md:aspect-[16/6] relative justify-between flex-col z-10 md:flex-row"
           style={{
             background: `radial-gradient(circle at ${cursorPos.x}px ${cursorPos.y}px, rgba(0, 100, 0, 0.3), transparent 70%)`,
             zIndex: -1,
           }}
         >
-          <div className="md:flex p-16 flex-col w-1/2 flex-1 justify-between">
-            <p className="text-gray-400 text-2xl mb-4">
-              <b className="font-semibold text-white">{title}</b> {description}
+          <div className="flex p-12 md:p-16 flex-col md:w-1/2 flex-1 justify-between">
+            <p className="text-gray-400  lg:text-xl xl:text-2xl mb-4">
+              <b className="font-bold text-white">{title}</b> {description}
             </p>
 
             <div>
               <a
-                className="font-semibold text-2xl flex items-center text-white py-1"
-                href="/features/actions"
+                className="font-bold lg:text-xl xl:text-2xl flex items-center text-white py-1"
+                href="https://github.com/zRealReax/TwitterClone"
               >
                 Discover {title}
                 <svg
@@ -72,8 +72,8 @@ const InteractiveCard = ({ title, description, image }: any) => {
               </a>
             </div>
           </div>
-          <div className="overflow-hidden w-1/2 flex items-end justify-end rounded-e-3xl">
-            <picture className="w-full h-5/6 ">
+          <div className="overflow-hidden md:w-1/2 flex items-end justify-end rounded-ee-3xl">
+            <picture className="w-5/6 md:w-full h-5/6 flex justify-end">
               <img
                 className="object-cover rounded-ss-3xl"
                 loading="lazy"

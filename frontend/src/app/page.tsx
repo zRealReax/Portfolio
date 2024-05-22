@@ -15,7 +15,7 @@ const Home = () => {
     {
       Title: "Project 2",
       Description:
-        "This project was built using Tauri and Next.js. This is a cross platform project, that has seen huge success in the past. Isn't that great?",
+        "This is a cross platform project, that has seen huge success in the past. Isn't that great?",
       Image: "project2.png",
       Link: "https://github.com/zRealReax/TwitterClone",
     },
@@ -29,7 +29,7 @@ const Home = () => {
     {
       Title: "Project 4",
       Description:
-        "This is another project I worked on. It was built using React and Go. This is another project I worked on. It was built using React and Go. This is another project I worked on. It was built using React and Go.",
+        "This is another project I worked on. It was built using React and Go.",
       Image: "project2.png",
       Link: "https://github.com/zRealReax/TwitterClone",
     },
@@ -61,17 +61,19 @@ const Home = () => {
         Explore my favourite Projects:
       </motion.p>
       <section className="mb-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="mx-8 sm:mx-16 md:mx-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-5 xl:gap-10">
           {projects.map((project) => (
             <ProjectCard project={project} key={project.Title} />
           ))}
         </div>
       </section>
-      <InteractiveCard
-        title="Twitter Clone"
-        description="was a very successfull learning experience for me, in learning to use Next.js and Golang."
-        image="/TwitterClone.png"
-      />
+      <section className="mx-8 sm:mx-16 md:mx-0">
+        <InteractiveCard
+          title="Twitter Clone"
+          description="was a very successfull learning experience for me, in learning to use Next.js and Golang."
+          image="/TwitterClone.png"
+        />
+      </section>
     </div>
   );
 };

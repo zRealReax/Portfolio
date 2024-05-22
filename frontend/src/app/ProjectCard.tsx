@@ -32,7 +32,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
           <img
             src={project.Image}
             alt={project.Title}
-            className="max-w-full w-11/12 h-48 object-cover rounded-md mb-3"
+            className="max-w-full w-11/12 aspect-video object-cover rounded-md mb-3"
           />
           <h3 className="text-xl text-white w-11/12 mb-2 font-bold">
             {project.Title}
