@@ -44,22 +44,24 @@ const Home = () => {
 
   return (
     <div className="container mx-auto px-4 py-16 flex flex-col items-center">
-      <motion.h1
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="text-4xl text-white font-bold mb-8"
-      >
-        Welcome to My Portfolio
-      </motion.h1>
-      <motion.p
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="text-gray-200 mb-8 text-center"
-      >
-        Explore my favourite Projects:
-      </motion.p>
+      <section>
+        <motion.h1
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-4xl text-white font-bold mb-8"
+        >
+          Welcome to My Portfolio
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-gray-200 mb-8 text-center"
+        >
+          Explore my favourite Projects:
+        </motion.p>
+      </section>
       <section className="mb-16">
         <div className="mx-8 sm:mx-16 md:mx-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-5 xl:gap-10">
           {projects.map((project) => (
