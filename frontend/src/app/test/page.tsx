@@ -3,6 +3,7 @@ import { throttle } from "lodash";
 import { useRef } from "react";
 import { motion, useAnimation, PanInfo } from "framer-motion";
 import Tilt from "react-parallax-tilt";
+import ThreeDot from "./text"
 
 const img = "/TwitterClone.png";
 
@@ -113,7 +114,9 @@ function Test() {
             <h1>React Parallax Tilt 👀</h1>
           </div>
         </Tilt>
+     <ThreeDot />
       </div>
+
     </div>
   );
 }
